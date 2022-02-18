@@ -2,5 +2,8 @@
   "kovan": {},
   "localhost": {
     "vesting": "0xF2E246BB76DF876Cef8b38ae84130F4F55De395b"
+  },
+  "polygon": {
+    "vesting": "0x0431eddEFC03a2DB949411DE234b674818F7b8c3"
   }
 }

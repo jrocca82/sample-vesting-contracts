@@ -47,11 +47,15 @@ export default {
     mainnet: {
       url: process.env.MAINNET_URL || defaultRpcUrl,
       accounts: [process.env.PRIVATE_KEY || defaultKey]
+    },
+    polygon: {
+      url: process.env.POLYGON_URL || defaultRpcUrl,
+      accounts: [process.env.PRIVATE_KEY || defaultKey]
     }
   },
   etherscan: {
     // Obtain etherscan API key at https://etherscan.io/
-    apiKey: process.env.ETHERSCAN_KEY
+    apiKey: process.env.POLYGONSCAN_KEY
   },
   solidity: {
     compilers: [
