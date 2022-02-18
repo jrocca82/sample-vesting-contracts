@@ -4,14 +4,14 @@ import { deployContract } from "../utils";
 export const contractNames = () => ["vesting"];
 
 export const constructorArguments = () => [
-  process.env.CONSTRUCTOR_BENEFICIARIES.split(","),
+  process.env.CONSTRUCTOR_VESTING_BENEFICIARIES.split(","),
   process.env.CONSTRUCTOR_VESTING_AMOUNT.split(",").map((x) =>
     ethers.utils.parseEther(x)
   ),
   process.env.CONSTRUCTOR_VESTING_PERIOD.split(","),
-  process.env.CONSTRUCTOR_START,
-  process.env.CONSTRUCTOR_TOKEN,
-  process.env.CONSTRUCTOR_CLAIM_INTERVAL
+  process.env.CONSTRUCTOR_VESTING_START,
+  process.env.CONSTRUCTOR_VESTING_TOKEN,
+  process.env.CONSTRUCTOR_VESTING_CLAIM_INTERVAL
 ];
 
 export const deploy = async (deployer, setAddresses) => {
